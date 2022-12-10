@@ -14,7 +14,7 @@
     <input type="text" v-model="tempSkill" @keyup.alt="addSkill">
     <!-- for the skill to be unique (:key="skill")-->
     <div v-for="skill in skills" :key="skill" class="pill">
-      {{skill}}
+      <span>{{skill}}</span>
     </div>
     <div class="terms">
       <input type="checkbox" required v-model="terms">
