@@ -1,4 +1,5 @@
 <template>
+<!-- 33:20 youtube timeline -->
   <form>
     <label>Email: </label>
     <!--two-way data binding: v-model -->
