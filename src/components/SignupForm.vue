@@ -11,7 +11,7 @@
       <option value="designer">Web Designer</option>
     </select>
     <label>Skills:</label>
-    <input type="text" v-model="tempSkill" @keyup="addSkill">
+    <input type="text" v-model="tempSkill" @keyup.alt="addSkill">
     <!-- for the skill to be unique (:key="skill")-->
     <div v-for="skill in skills" :key="skill" class="pill">
       {{skill}}
@@ -82,5 +82,17 @@
     margin: 0 10px 0 0;
     position: relative;
     top: 3px;
+  }
+  .pill {
+    display: inline-block;
+    margin: 20px 10px 0 0;
+    padding: 6px 12px;
+    background: #eee;
+    border-radius: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #777;
+    cursor: pointer;
   }
 </style>
