@@ -94,5 +94,5 @@
     font-weight: bold;
     color: #777;
     cursor: pointer;
-  }
+  } 
 </style>
